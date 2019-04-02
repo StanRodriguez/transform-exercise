@@ -1,0 +1,97 @@
+		h1{
+			position: absolute;
+			left: 600px;
+			z-index: -1;
+		}
+		main{
+			width: 800px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		#oneone{/*
+			transform: rotate(90deg);
+			transform-origin: top left;*/
+			
+			background-color: blue;
+		}
+		main:hover #oneone{/*
+			transform: rotate(90deg);
+			transform-origin: top left;*/
+			
+			animation-name: oneone;
+			animation-duration: 3s;
+			animation-direction: alternate;
+		}
+		main:hover #onetwo{
+		
+			animation-name: onetwo;
+			animation-duration: 3s;
+			animation-direction: alternate;
+		}
+		#onetwo{
+
+		/*
+			transform: rotate(-90deg);
+			transform-origin: top right;*/
+		
+			background-color: red;
+		
+		}
+		main:hover #twoone{
+
+			animation-name: twoone;
+			animation-duration: 3s;
+			animation-direction: alternate;
+		}
+		#twoone{
+		
+			background-color: red;
+		}
+		main:hover #twotwo{
+
+			animation-name: twotwo;
+			animation-duration: 3s;
+			animation-direction: alternate;
+		}
+		#twotwo{
+		
+			background-color: blue;
+		}
+		#parent{
+			display: flex;
+		}
+		#parent2{
+			display: flex;
+		}
+		#parent div{
+			height: 300px;
+			width: 300px;
+		}
+		#parent2 div{
+			height: 300px;
+			width: 300px;
+		}
+		@keyframes oneone{
+				50%{
+				transform: translate(-80%) rotate(90deg);
+			
+			}
+
+		}
+		@keyframes onetwo{
+			50%{
+				transform: translate(80%) rotate(-90deg);
+			}
+		}
+		@keyframes twoone{
+			50%{
+				transform: translate(-80%) rotate(90deg);
+			}
+
+		}
+		@keyframes twotwo{
+			50%{
+				transform: translate(80%) rotate(-90deg);
+			}
+		}
+
